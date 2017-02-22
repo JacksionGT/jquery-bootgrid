@@ -111,7 +111,7 @@ function loadColumns()
                 headerAlign: data.headerAlign || "left",
                 cssClass: data.cssClass || "",
                 headerCssClass: data.headerCssClass || "",
-                formatter: that.options.formatters[data.formatter] || null,
+                formatter: that.options.formatters[data.columnId] || null,
                 order: (!sorted && (data.order === "asc" || data.order === "desc")) ? data.order : null,
                 searchable: !(data.searchable === false), // default: true
                 sortable: !(data.sortable === false), // default: true
